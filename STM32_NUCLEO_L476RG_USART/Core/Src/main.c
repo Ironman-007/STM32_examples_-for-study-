@@ -57,7 +57,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	sprintf(message, "Hello FZ! Tracing X = %d\r\n", X);
+	  sprintf(message, "Hello FZ! Tracing X = %d\r\n", X);
     HAL_UART_Transmit(&huart2, (uint8_t*) message, sizeof(message), 100);
     HAL_Delay(1000);
     X++;
